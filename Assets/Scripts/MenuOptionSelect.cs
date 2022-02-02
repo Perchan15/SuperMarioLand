@@ -20,7 +20,7 @@ public class MenuOptionSelect : MonoBehaviour
     void Update()
     {
         //Cycles options with arrow keys
-        if (Input.GetKeyDown("down"))
+        if (Input.GetKeyDown("down") || Input.GetKeyDown("s"))
         {
             if (choice == "start")
             {
@@ -38,7 +38,7 @@ public class MenuOptionSelect : MonoBehaviour
                 MoveCursor(startLocation);
             }
         }
-        else if (Input.GetKeyDown("up"))
+        else if (Input.GetKeyDown("up") || Input.GetKeyDown("w"))
         {
             if (choice == "start")
             {
@@ -57,7 +57,7 @@ public class MenuOptionSelect : MonoBehaviour
             }
         }
         //Selects option
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space") || Input.GetKeyDown("return") || Input.GetKeyDown("k"))
         {
             if (choice == "start")
             {
