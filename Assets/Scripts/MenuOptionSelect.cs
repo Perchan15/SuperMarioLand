@@ -5,11 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MenuOptionSelect : MonoBehaviour
 {
-    private int choice;
+    public Vector3 startLocation;
+    public Vector3 aboutLocation;
+    public Vector3 exitLocation;
+
+    private string choice;
     // Start is called before the first frame update
     void Start()
     {
-        choice = 1;
+        choice = "start";
     }
 
     // Update is called once per frame
@@ -18,26 +22,60 @@ public class MenuOptionSelect : MonoBehaviour
         //Cycles options with arrow keys
         if (Input.GetKeyDown("down"))
         {
-            if (choice < 3)
+            if (choice == "start")
             {
-                choice++;
+                choice = "about";
+                MoveCursor(aboutLocation);
             }
-            else
+            else if (choice == "about")
             {
-                choice = 1;
+                choice = "exit";
+                MoveCursor(exitLocation);
+            }
+            else if (choice == "exit")
+            {
+                choice = "start";
+                MoveCursor(startLocation);
+            }
+        }
+        else if (Input.GetKeyDown("up"))
+        {
+            if (choice == "start")
+            {
+                choice = "exit";
+                MoveCursor(exitLocation);
+            }
+            else if (choice == "exit")
+            {
+                choice = "about";
+                MoveCursor(aboutLocation);
+            }
+            else if (choice == "about")
+            {
+                choice = "start";
+                MoveCursor(startLocation);
             }
         }
         //Selects option
         if (Input.GetKeyDown("space"))
         {
-            if (choice == 1)
+            if (choice == "start")
             {
                 SceneManager.LoadScene("Level 1");
             }
-            else if (choice == 2)
+            else if (choice == "about")
             {
-                SceneManager.LoadScene("About");
+                SceneManager.LoadScene("about");
+            }
+            else
+            {
+                Application.Quit();
             }
         }
+    }
+
+    void MoveCursor(Vector3 location)
+    {
+        transform.position = location;
     }
 }
