@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 1c32650389c9fe44990bc5eac7a599d3
+guid: 7f68320ce4173e942aa08674188f0b41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1428657670321064428
-    second: Mario Sprite Sheet_0
+      213: -4065353369476605630
+    second: Pipe Sprite Sheet_0
   - first:
-      213: 7853938966586614271
-    second: Mario Sprite Sheet_1
+      213: 6149357191725588233
+    second: Pipe Sprite Sheet_1
   - first:
-      213: 4646503640169498987
-    second: Mario Sprite Sheet_2
+      213: 5137251531377943816
+    second: Pipe Sprite Sheet_2
   - first:
-      213: 3217002283891182484
-    second: Mario Sprite Sheet_3
+      213: -7852144177863949363
+    second: Pipe Sprite Sheet_3
   - first:
-      213: -1651750365625141931
-    second: Mario Sprite Sheet_4
+      213: 5465515927172531153
+    second: Pipe Sprite Sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -61,7 +61,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 31
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -118,33 +118,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mario Sprite Sheet_0
+      name: Pipe Sprite Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 17
-        width: 10
-        height: 12
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce9cf11f49c93d310800000000000000
-      internalID: 1428657670321064428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario Sprite Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 17
-        width: 9
+        width: 14
         height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,39 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff16efec0ebcefc60800000000000000
-      internalID: 7853938966586614271
+      spriteID: 249d8ed46a6f497c0800000000000000
+      internalID: -4065353369476605630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mario Sprite Sheet_2
+      name: Pipe Sprite Sheet_1
       rect:
         serializedVersion: 2
-        x: 21
+        x: 15
         y: 17
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b69ccd74172bb7040800000000000000
-      internalID: 4646503640169498987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mario Sprite Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3
         width: 12
         height: 13
       alignment: 0
@@ -195,19 +153,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49b44f4688615ac20800000000000000
-      internalID: 3217002283891182484
+      spriteID: 90f1cc109c7e65550800000000000000
+      internalID: 6149357191725588233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mario Sprite Sheet_4
+      name: Pipe Sprite Sheet_2
       rect:
         serializedVersion: 2
-        x: 13
-        y: 3
-        width: 11
+        x: 1
+        y: 6
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8052d99ac0f2b4740800000000000000
+      internalID: 5137251531377943816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 4
+        width: 8
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -216,8 +195,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 555ba473bcdc319e0800000000000000
-      internalID: -1651750365625141931
+      spriteID: dc384410974970390800000000000000
+      internalID: -7852144177863949363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pipe Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 12
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3cb5937c969db40800000000000000
+      internalID: 5465515927172531153
       vertices: []
       indices: 
       edges: []
