@@ -10,6 +10,8 @@ public class Player_Movement : MonoBehaviour
     public int gravity;
     private bool Run;
 
+    public Animator animator;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();
@@ -17,8 +19,12 @@ public class Player_Movement : MonoBehaviour
 
     private void Update()
     {
+
         float horizontalInput = Input.GetAxis("Horizontal");
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
+        //Sets speed in animation clip
+        animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
 
         //Jumping
         if (Input.GetKey(KeyCode.K) && grounded)
@@ -26,12 +32,16 @@ public class Player_Movement : MonoBehaviour
             Jump();
         }
 
+        //Sets jumping boolean in animation clip
+        animator.SetBool("IsJumping", grounded);
+
         //sprite flip
         if (horizontalInput > 0.01f)
             transform.localScale = Vector3.one;
         else if (horizontalInput < -0.01f)
         {
             transform.localScale = new Vector3(-1, 1, 1);
+
         }
 
         //Running
