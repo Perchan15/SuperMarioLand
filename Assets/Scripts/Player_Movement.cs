@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player_Movement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    public float speed;
     private Rigidbody2D body;
     private bool grounded;
     public int gravity;
@@ -48,12 +48,17 @@ public class Player_Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             speed = 15;
+            body.gravityScale = 4;
         }
 
         if (Input.GetKeyUp(KeyCode.L))
         {
             speed = 10;
+            body.gravityScale = 2;
         }
+
+        
+
 
     }
 
@@ -61,6 +66,8 @@ public class Player_Movement : MonoBehaviour
     {
         body.velocity = new Vector2(body.velocity.x, speed);
         grounded = false;
+        
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -68,6 +75,7 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             grounded = true;
+            
         }
     }
 }
