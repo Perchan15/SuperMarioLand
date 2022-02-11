@@ -11,11 +11,7 @@ public class Enemy_Goomba : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
-
-=======
         
->>>>>>> 530922524b68edf367a39a373eca8df2cfcb1e97
     }
 
     // Update is called once per frame
@@ -26,11 +22,7 @@ public class Enemy_Goomba : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-<<<<<<< HEAD
-        if (collision != null && !collision.collider.CompareTag("Player") && collision.collider.CompareTag("ground"))
-=======
         if (collision !=null && !collision.collider.CompareTag("player") && collision.collider.CompareTag("ground"))
->>>>>>> 530922524b68edf367a39a373eca8df2cfcb1e97
         {
             facingLeft = !facingLeft;
         }
@@ -44,14 +36,6 @@ public class Enemy_Goomba : MonoBehaviour
         {
             gameObject.transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-<<<<<<< HEAD
-
-
-
-    }
-}
-=======
     }
 }
 
->>>>>>> 530922524b68edf367a39a373eca8df2cfcb1e97
