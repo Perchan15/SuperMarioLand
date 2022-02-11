@@ -3926,7 +3926,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 804799340}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ed935776c60d9684197f3f25f171aa43, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -3981,7 +3981,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ed935776c60d9684197f3f25f171aa43, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -5462,6 +5462,7 @@ GameObject:
   - component: {fileID: 1271054310}
   - component: {fileID: 1271054314}
   - component: {fileID: 1271054313}
+  - component: {fileID: 1271054315}
   m_Layer: 0
   m_Name: PowerUpBlock
   m_TagString: ground
@@ -5938,6 +5939,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1271054315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271054308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0e0c5e62b32860428f9ae4969ff46f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceHeight: 0.5
+  bounceSpeed: 4
+  coinCounter: {fileID: 0}
+  emptyBlockSprite: {fileID: -510826208307111945, guid: 5d943471198d923418cdd31469b75027, type: 3}
 --- !u!1 &1282362406
 GameObject:
   m_ObjectHideFlags: 0
