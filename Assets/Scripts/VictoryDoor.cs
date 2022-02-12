@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GoToLevel2 : MonoBehaviour
+public class VictoryDoor : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Level 2");
+            SceneManager.LoadScene("VictoryScene");
         }
     }
 }
