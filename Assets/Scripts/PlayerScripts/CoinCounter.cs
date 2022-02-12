@@ -12,8 +12,8 @@ public class CoinCounter : MonoBehaviour
 
     void start()
     {
-        score.text = coinValue.ToString();
         audioSource = GetComponent<AudioSource>();
+
     }
 
     void update()
@@ -21,6 +21,16 @@ public class CoinCounter : MonoBehaviour
         if (coinValue >= 100)
         {
             coinValue = 0;
+        }
+
+        if (coinValue <= 0)
+        {
+            score.text = "X" + coinValue.ToString();
+        }
+
+        if(coinValue == 0)
+        {
+            score.text = "X 00";
         }
     }
 

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3713727688479392610}
   - component: {fileID: -7011130031963099932}
   m_Layer: 0
-  m_Name: PowerUpBlock
+  m_Name: PowerUpBlock 1
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

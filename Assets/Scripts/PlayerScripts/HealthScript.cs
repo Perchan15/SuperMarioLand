@@ -16,6 +16,8 @@ public class HealthScript : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
+    public ScoreScript scoreScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -51,6 +53,11 @@ public class HealthScript : MonoBehaviour
                 isInvincible = false;
         }
 
+        if (currentHealth >= 2)
+        {
+            currentHealth = 2;
+        }
+
 
     }
 
@@ -64,13 +71,20 @@ public class HealthScript : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-
         }
+
+        if (collision.collider.tag == "Mushroom")
+        {
+            currentHealth += 1;
+            Destroy(collision.collider.gameObject);
+            scoreScript.scoreValue += 1000;
+
+            if (currentHealth == maxHealth)
+            {
+                Destroy(collision.collider.gameObject);
+            }
+        }
+
     }
 
-    public void ChangeHealth(int amount)
-    {
-        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
-    }
 }

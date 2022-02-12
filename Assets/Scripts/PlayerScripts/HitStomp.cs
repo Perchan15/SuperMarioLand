@@ -6,6 +6,9 @@ public class HitStomp : MonoBehaviour
 {
     public float bounce;
     public Rigidbody2D rb2D;
+
+    public ScoreScript scoreScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +28,7 @@ public class HitStomp : MonoBehaviour
         {
             Destroy(other.gameObject);
             rb2D.velocity = new Vector2(rb2D.velocity.x, bounce);
+            scoreScript.scoreValue += 100;
         }
     }
 }
