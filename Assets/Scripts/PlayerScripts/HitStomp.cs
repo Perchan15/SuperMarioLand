@@ -9,10 +9,14 @@ public class HitStomp : MonoBehaviour
 
     public ScoreScript scoreScript;
 
+    ParticleOnDestroy particleScript;
+    
+    public AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        particleScript = GetComponent<ParticleOnDestroy>();
     }
 
     // Update is called once per frame
@@ -27,6 +31,8 @@ public class HitStomp : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             Destroy(other.gameObject);
+            audioSource.Play();
+            particleScript.SpawnParticle(other.transform.position);
             rb2D.velocity = new Vector2(rb2D.velocity.x, bounce);
             scoreScript.scoreValue += 1000;
             scoreScript.score.text = scoreScript.scoreValue.ToString();

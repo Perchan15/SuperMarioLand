@@ -126,3 +126,4 @@ MonoBehaviour:
   bounceSpeed: 4
   coinCounter: {fileID: 8523592005884818174, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
   emptyBlockSprite: {fileID: -510826208307111945, guid: 5d943471198d923418cdd31469b75027, type: 3}
+  scoreScript: {fileID: 0}

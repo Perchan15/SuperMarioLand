@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthScript : MonoBehaviour
 {
@@ -18,11 +19,15 @@ public class HealthScript : MonoBehaviour
 
     public ScoreScript scoreScript;
 
+    public AudioSource audioSource;
+    public AudioSource powerUpSound;
+
+    //public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = 1;
-
 
     }
 
@@ -30,20 +35,9 @@ public class HealthScript : MonoBehaviour
     void Update()
     {
 
-        if (currentHealth == 2)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Grow;
-
-        }
-
-        if (currentHealth == 1)
-        {
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = Small;
-        }
-
         if (currentHealth == 0)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("GameOverScene");
         }
 
         if (isInvincible)
@@ -65,7 +59,12 @@ public class HealthScript : MonoBehaviour
     {
         if (collision.collider.tag == "Enemy")
         {
+            if (currentHealth == 2)
+            {
+                transform.localScale /= 1.2f;
+            }
             currentHealth -= 1;
+            audioSource.Play();
             if (isInvincible)
                 return;
 
@@ -76,7 +75,12 @@ public class HealthScript : MonoBehaviour
 
         if (collision.collider.tag == "Mushroom")
         {
-            currentHealth += 1;
+            if (currentHealth == 1)
+            {
+                powerUpSound.Play();
+                transform.localScale *= 1.2f;
+                currentHealth += 1;
+            }
             Destroy(collision.collider.gameObject);
             scoreScript.scoreValue += 1000;
             scoreScript.score.text = scoreScript.scoreValue.ToString();
@@ -85,9 +89,8 @@ public class HealthScript : MonoBehaviour
             {
                 Destroy(collision.collider.gameObject);
             }
-        }
 
-        
+        }
 
     }
 

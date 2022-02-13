@@ -15,8 +15,7 @@ public class QestitionMushroomBlock : MonoBehaviour
     public Transform Spawnpoint;
     public GameObject Prefab;
 
-
-
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +29,7 @@ public class QestitionMushroomBlock : MonoBehaviour
         {
             canBounce = false;
             StartCoroutine(Bounce());
+            audioSource.Play();
             Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
 
 
@@ -84,8 +84,6 @@ public class QestitionMushroomBlock : MonoBehaviour
         {
            
            QuestionBlockBounce();
-
-           
 
         }
 

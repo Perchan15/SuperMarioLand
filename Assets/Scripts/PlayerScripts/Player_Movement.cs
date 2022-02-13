@@ -10,7 +10,11 @@ public class Player_Movement : MonoBehaviour
     public int gravity;
     private bool Run;
 
+    public int jumpValue; 
+
     public Animator animator;
+
+    public AudioSource audioSource;
 
     private void Awake()
     {
@@ -20,7 +24,8 @@ public class Player_Movement : MonoBehaviour
     private void Update()
     {
 
-
+        float horizontalInput = Input.GetAxis("Horizontal");
+        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
         //Sets speed in animation clip
         animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
@@ -35,42 +40,37 @@ public class Player_Movement : MonoBehaviour
         animator.SetBool("IsJumping", grounded);
 
         //sprite flip
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+        if (horizontalInput > 0.01f)
             transform.eulerAngles = new Vector2(0, 0);
-        }
-        //Move Left
-        if (Input.GetKey(KeyCode.A))
+            
+        else if (horizontalInput < -0.01f)
         {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 180); //flip the character on its x axis
         }
 
         //Running
         if (Input.GetKeyDown(KeyCode.L))
         {
-            speed = 15;
-            body.gravityScale = 4;
+            speed = 13;
         }
 
         if (Input.GetKeyUp(KeyCode.L))
         {
             speed = 10;
-            body.gravityScale = 2;
         }
 
-
+        
 
 
     }
 
     private void Jump()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);
+
+        audioSource.Play();
+        body.velocity = new Vector2(body.velocity.x, jumpValue);
         grounded = false;
-
-
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -78,9 +78,7 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             grounded = true;
-
+            
         }
     }
-
-
 }

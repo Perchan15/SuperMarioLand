@@ -7,12 +7,11 @@ public class CoinCounter : MonoBehaviour
 {
     public int coinValue = 0;
     public Text score;
-    public AudioClip Coinsound;
-    AudioSource audioSource;
+    public AudioSource audioSource;
 
     void start()
     {
-        audioSource = GetComponent<AudioSource>();
+
         score.text = coinValue.ToString();
 
     }
@@ -39,19 +38,13 @@ public class CoinCounter : MonoBehaviour
     {
         if (collision.collider.tag == "coin")
         {
+            audioSource.Play();
             Destroy(collision.collider.gameObject);
             coinValue += 1;
             score.text = coinValue.ToString();
 
-            PlaySound(Coinsound);
+            
         }
-    }
-
-
-
-    public void PlaySound(AudioClip clip)
-    {
-        audioSource.PlayOneShot(clip);
     }
 
 }

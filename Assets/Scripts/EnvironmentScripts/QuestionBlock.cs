@@ -18,7 +18,7 @@ public class QuestionBlock : MonoBehaviour
 
     public ScoreScript scoreScript;
 
-
+    public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
@@ -32,8 +32,10 @@ public class QuestionBlock : MonoBehaviour
         {
             canBounce = false;
             StartCoroutine(Bounce());
-             coinCounter.coinValue += 1;
+            coinCounter.coinValue += 1;
             coinCounter.score.text = coinCounter.coinValue.ToString();
+
+            audioSource.Play();
 
             scoreScript.scoreValue += 100;
             scoreScript.score.text = scoreScript.scoreValue.ToString();
@@ -82,7 +84,6 @@ public class QuestionBlock : MonoBehaviour
     if (collision.gameObject.tag == "Player")
         {
             QuestionBlockBounce();
-
             
         }
         
