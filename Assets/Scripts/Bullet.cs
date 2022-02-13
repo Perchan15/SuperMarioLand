@@ -11,13 +11,29 @@ public class Bullet : MonoBehaviour
 	public ScoreScript scoreScript;
 	public CoinCounter coinCounter;
 
-
+	public float Timer;
 
 	// Use this for initialization
 	void Start()
 	{
 		rb.velocity = transform.right * speed;
+
+		
+		
 	}
+
+	void Update()
+    {
+
+		Timer -= Time.deltaTime;
+
+		if (Timer <= 0)
+        {
+			Destroy(gameObject);
+        }
+
+	
+    }
 
 	public void OnCollisionEnter2D(Collision2D collision)
 	{

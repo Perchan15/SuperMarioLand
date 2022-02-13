@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042940652761996698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.681, z: 0}
+  m_LocalPosition: {x: 0, y: -0.691, z: 0}
   m_LocalScale: {x: 0.9, y: 0.0379, z: 1}
   m_Children: []
   m_Father: {fileID: 4838099274996296493}
@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.005433619, y: 0}
+  m_Offset: {x: 0.0022265315, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.309708, y: 1}
+  m_Size: {x: 1.0098561, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &2901642764895983612
 MonoBehaviour:
@@ -251,7 +251,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.034396768, y: 0.009605765}
+  m_Offset: {x: 0.005070448, y: 0.009605765}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -262,7 +262,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1812065, y: 1.3125899}
+  m_Size: {x: 1.1329684, y: 1.3125899}
   m_EdgeRadius: 0
 --- !u!95 &4838099274996296489
 Animator:
@@ -359,6 +359,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 6043390200954537625}
   bulletPrefab: {fileID: 5071525740940665922, guid: f339f793a00188640a1dd93af3005a54, type: 3}
+  PowerActive: 0
+  healthScript: {fileID: 0}
 --- !u!1 &5400791774816275384
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,7 +387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5400791774816275384}
   m_LocalRotation: {x: -0, y: -0, z: -0.21364535, w: 0.9769113}
-  m_LocalPosition: {x: 0.87, y: -0.13, z: 0}
+  m_LocalPosition: {x: 0.752, y: -0.05, z: 0}
   m_LocalScale: {x: 0.2375, y: 0.075384, z: 1}
   m_Children: []
   m_Father: {fileID: 4838099274996296493}
@@ -449,7 +451,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5400791774816275384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

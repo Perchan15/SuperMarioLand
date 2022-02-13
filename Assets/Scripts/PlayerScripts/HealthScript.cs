@@ -71,6 +71,7 @@ public class HealthScript : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
+            
         }
 
         if (collision.collider.tag == "Mushroom")
@@ -84,6 +85,8 @@ public class HealthScript : MonoBehaviour
                 Destroy(collision.collider.gameObject);
             }
         }
+
+        
 
     }
 
