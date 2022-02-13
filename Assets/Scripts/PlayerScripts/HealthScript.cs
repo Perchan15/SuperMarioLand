@@ -99,7 +99,6 @@ public class HealthScript : MonoBehaviour
             scoreScript.score.text = scoreScript.scoreValue.ToString();
             if (currentHealth == 1)
             {
-                transform.localScale *= 1.2f;
                 currentHealth += 1;
             }
         }
