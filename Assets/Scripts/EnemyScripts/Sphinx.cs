@@ -15,6 +15,11 @@ public class Sphinx : MonoBehaviour
     public Transform Shootpoint;
     public float Force;
 
+    public Sprite MouthClosed;
+
+    public Sprite MouthOpen;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +38,7 @@ public class Sphinx : MonoBehaviour
                 if (Detected == false)
                 {
                     Detected = true;
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = MouthOpen;
                 }
             }
             else
@@ -40,6 +46,7 @@ public class Sphinx : MonoBehaviour
                 if (Detected == true)
                 {
                     Detected = false;
+                    this.gameObject.GetComponent<SpriteRenderer>().sprite = MouthClosed;
                 }
             }
         }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9170504195833763067}
   - component: {fileID: 6647632695463385263}
   - component: {fileID: 154878957570342573}
+  - component: {fileID: 8194591307972564758}
   m_Layer: 0
   m_Name: SphinxFireBall
   m_TagString: Enemy
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5026814583501660424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.1435947, y: -1.6104918, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 4.8, y: 4.8, z: 4.8}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Sprite: {fileID: 3414753049866402528, guid: 197b740852b5c0d44b3e498ef4e911ea, type: 3}
   m_Color: {r: 1, g: 0.9009648, b: 0.23919272, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,9 +98,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.02785772, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.04280696
 --- !u!50 &154878957570342573
 Rigidbody2D:
   serializedVersion: 4
@@ -120,4 +121,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &8194591307972564758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5026814583501660424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452674eb2e7c705488fd558c21f42e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 3

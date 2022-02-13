@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - coin
   - Mushroom
+  - PowerFlower
   layers:
   - Default
   - TransparentFX
