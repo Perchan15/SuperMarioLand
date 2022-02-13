@@ -8,6 +8,7 @@ public class CoinCounter : MonoBehaviour
     public int coinValue = 0;
     public Text score;
     public AudioSource audioSource;
+    public ScoreScript scoreScript;
 
     void start()
     {
@@ -40,6 +41,8 @@ public class CoinCounter : MonoBehaviour
             audioSource.Play();
             coinValue += 1;
             score.text = coinValue.ToString();
+            scoreScript.scoreValue += 100;
+            scoreScript.score.text = scoreScript.scoreValue.ToString();
         }
 
 

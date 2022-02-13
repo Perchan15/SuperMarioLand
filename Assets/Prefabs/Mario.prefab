@@ -466,6 +466,7 @@ MonoBehaviour:
   coinValue: 0
   score: {fileID: 0}
   audioSource: {fileID: 5959160313402165757}
+  scoreScript: {fileID: 6856966122012821438}
 --- !u!114 &5436445435057093650
 MonoBehaviour:
   m_ObjectHideFlags: 0

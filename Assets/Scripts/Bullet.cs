@@ -14,7 +14,6 @@ public class Bullet : MonoBehaviour
 	public float Timer;
 	public Sphinx sphinx; 
 
-	public AudioSource audioSource;
 
 	// Use this for initialization
 	void Start()
@@ -42,16 +41,16 @@ public class Bullet : MonoBehaviour
 	{
 		if (collision.gameObject.tag == "Enemy")
 		{
-			audioSource.Play();
+			
 			Destroy(collision.collider.gameObject);
 			Destroy(gameObject);
 			scoreScript.scoreValue += 1000;
-			scoreScript.score.text = scoreScript.scoreValue.ToString();
+			
 		}
 
 		if (collision.gameObject.tag == "spinx")
         {
-			audioSource.Play();
+			
 			sphinx.Health -= 1;
 			Destroy(gameObject);
 		}
@@ -66,7 +65,9 @@ public class Bullet : MonoBehaviour
 			Destroy(gameObject);
 			Destroy(other.gameObject);
 			coinCounter.coinValue += 1;
+			scoreScript.scoreValue += 100;
 			coinCounter.score.text = coinCounter.coinValue.ToString();
+			scoreScript.score.text = scoreScript.scoreValue.ToString();
 		}
 
 	}
