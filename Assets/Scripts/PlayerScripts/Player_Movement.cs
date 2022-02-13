@@ -20,8 +20,7 @@ public class Player_Movement : MonoBehaviour
     private void Update()
     {
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
+
 
         //Sets speed in animation clip
         animator.SetFloat("Speed", Mathf.Abs(body.velocity.x));
@@ -36,12 +35,16 @@ public class Player_Movement : MonoBehaviour
         animator.SetBool("IsJumping", grounded);
 
         //sprite flip
-        if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < -0.01f)
+        if (Input.GetKey(KeyCode.D))
         {
-            transform.localScale = new Vector3(-1, 1, 1);
-
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            transform.eulerAngles = new Vector2(0, 0);
+        }
+        //Move Left
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            transform.eulerAngles = new Vector2(0, 180); //flip the character on its x axis
         }
 
         //Running
@@ -57,7 +60,7 @@ public class Player_Movement : MonoBehaviour
             body.gravityScale = 2;
         }
 
-        
+
 
 
     }
@@ -66,7 +69,7 @@ public class Player_Movement : MonoBehaviour
     {
         body.velocity = new Vector2(body.velocity.x, speed);
         grounded = false;
-        
+
 
     }
 
@@ -75,7 +78,9 @@ public class Player_Movement : MonoBehaviour
         if (collision.gameObject.tag == "ground")
         {
             grounded = true;
-            
+
         }
     }
+
+
 }

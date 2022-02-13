@@ -12250,6 +12250,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945638263}
   m_CullTransparentMesh: 1
+--- !u!95 &1945820055 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4838099274996296489, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+  m_PrefabInstance: {fileID: 4838099275171465927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1957435945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13598,6 +13603,10 @@ PrefabInstance:
       propertyPath: score
       value: 
       objectReference: {fileID: 1259721291}
+    - target: {fileID: 4838099274996296489, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296490, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: m_Size.x
       value: 1.1258538
@@ -13614,12 +13623,20 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00033569336
       objectReference: {fileID: 0}
+    - target: {fileID: 4838099274996296491, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296492, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296492, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: gravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838099274996296492, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296493, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
@@ -13666,6 +13683,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4838099274996296494, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838099274996296494, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296495, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: m_Name
       value: Mario
@@ -13690,6 +13715,14 @@ PrefabInstance:
       propertyPath: scoreValue
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7419272924383672585, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7419272924383672585, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1945820055}
     - target: {fileID: 8523592005884818174, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: score
       value: 
@@ -13701,6 +13734,10 @@ PrefabInstance:
     - target: {fileID: 8523592005884818174, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: coinValue
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569274714761488255, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.704
       objectReference: {fileID: 0}
     - target: {fileID: 9069138735879421905, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: scoreScript
