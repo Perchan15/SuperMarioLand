@@ -11,6 +11,7 @@ public class weapon : MonoBehaviour
 	public bool PowerActive;
 
 	public HealthScript healthScript;
+	public ScoreScript scoreScript;
 
 	// Update is called once per frame
 
@@ -52,8 +53,8 @@ public class weapon : MonoBehaviour
 		if (collision.collider.tag == "PowerFlower")
 		{
 			PowerActive = true;
-			healthScript.currentHealth += 1;
 			Destroy(collision.collider.gameObject);
+			
 		}
 
 	

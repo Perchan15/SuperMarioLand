@@ -19,6 +19,9 @@ public class Sphinx : MonoBehaviour
 
     public Sprite MouthOpen;
 
+    public int Health =3;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,12 @@ public class Sphinx : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Health <= 0)
+        {
+            Destroy(gameObject);
+        }
+
+
         Vector2 targetPos = Target.position;
         Direction = targetPos - (Vector2)transform.position;
         RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range);
@@ -69,5 +78,15 @@ public class Sphinx : MonoBehaviour
     {
         Gizmos.DrawWireSphere(transform.position, Range);
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            Health -= 1;
+        }
+    }
+
+
 }
 

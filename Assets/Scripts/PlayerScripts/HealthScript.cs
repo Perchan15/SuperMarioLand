@@ -92,6 +92,34 @@ public class HealthScript : MonoBehaviour
 
         }
 
+        if (collision.collider.tag == "PowerFlower")
+        {
+            powerUpSound.Play();
+            scoreScript.scoreValue += 1000;
+            scoreScript.score.text = scoreScript.scoreValue.ToString();
+            if (currentHealth == 1)
+            {
+                transform.localScale *= 1.2f;
+                currentHealth += 1;
+            }
+        }
+
+        if (collision.collider.tag == "spinx")
+        {
+            if (currentHealth == 2)
+            {
+                transform.localScale /= 1.2f;
+            }
+            currentHealth -= 1;
+            audioSource.Play();
+            if (isInvincible)
+                return;
+
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
+
+        }
+
     }
 
 }

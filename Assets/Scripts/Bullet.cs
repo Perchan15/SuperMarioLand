@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
 	public CoinCounter coinCounter;
 
 	public float Timer;
+	public Sphinx sphinx; 
 
 	// Use this for initialization
 	void Start()
@@ -42,17 +43,29 @@ public class Bullet : MonoBehaviour
 			Destroy(gameObject);
 			Destroy(collision.collider.gameObject);
 			scoreScript.scoreValue += 1000;
-			
+			scoreScript.score.text = scoreScript.scoreValue.ToString();
 		}
 
-		if (collision.gameObject.tag == "coin")
+		if (collision.gameObject.tag == "spinx")
         {
-			coinCounter.coinValue += 1;
+			sphinx.Health -= 1;
 			Destroy(gameObject);
-			Destroy(collision.collider.gameObject);
-			
-			
 		}
 
 	}
+
+	void OnTriggerEnter2D(Collider2D other)
+    {
+		if (other.tag == "coin")
+		{
+			Destroy(gameObject);
+			Destroy(other.gameObject);
+			coinCounter.audioSource.Play();
+			coinCounter.coinValue += 1;
+			coinCounter.score.text = coinCounter.coinValue.ToString();
+		}
+
+	}
+
+
 }

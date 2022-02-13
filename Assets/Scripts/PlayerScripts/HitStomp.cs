@@ -13,6 +13,8 @@ public class HitStomp : MonoBehaviour
     
     public AudioSource audioSource;
 
+    public Sphinx sphinx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,5 +39,6 @@ public class HitStomp : MonoBehaviour
             scoreScript.scoreValue += 1000;
             scoreScript.score.text = scoreScript.scoreValue.ToString();
         }
+
     }
 }

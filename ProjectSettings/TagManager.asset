@@ -11,6 +11,8 @@ TagManager:
   - Mushroom
   - PowerFlower
   - Question
+  - spinx
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - UI
   - Mushroom
   - Enemy
-  - 
+  - enemnyBarrier
   - 
   - 
   - 

@@ -20,6 +20,9 @@ public class QuestionBlock : MonoBehaviour
 
     public AudioSource audioSource;
 
+    public Transform Spawnpoint;
+    public GameObject Prefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,7 @@ public class QuestionBlock : MonoBehaviour
 
             scoreScript.scoreValue += 100;
             scoreScript.score.text = scoreScript.scoreValue.ToString();
+            Instantiate(Prefab, Spawnpoint.position, Spawnpoint.rotation);
         }
         
     }

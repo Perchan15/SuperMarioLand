@@ -31,20 +31,21 @@ public class CoinCounter : MonoBehaviour
         
     }
 
-
-
-
-    public void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.tag == "coin")
+        if (other.tag == "coin")
         {
+            
+            Destroy(other.gameObject);
             audioSource.Play();
-            Destroy(collision.collider.gameObject);
             coinValue += 1;
             score.text = coinValue.ToString();
-
-            
         }
+
+
     }
+
+
+   
 
 }
