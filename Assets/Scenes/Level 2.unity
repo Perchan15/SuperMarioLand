@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 505191893}
+    - target: {fileID: 5580410885337955525, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 2142471999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
 --- !u!4 &18697694 stripped
@@ -6927,6 +6931,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 505191893}
+    - target: {fileID: 5580410885337955525, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 2142471999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
 --- !u!1 &665720714
@@ -9946,6 +9954,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 505191893}
+    - target: {fileID: 5580410885337955525, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 2142471999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
 --- !u!4 &1346948085 stripped
@@ -10016,6 +10028,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 505191893}
+    - target: {fileID: 5580410885337955525, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 2142471999}
     - target: {fileID: 6631732904321598035, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
       propertyPath: m_Size.y
       value: 0.99122036
@@ -20054,6 +20070,10 @@ PrefabInstance:
       propertyPath: coinCounter
       value: 
       objectReference: {fileID: 505191893}
+    - target: {fileID: 5580410885337955525, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
+      propertyPath: scoreScript
+      value: 
+      objectReference: {fileID: 2142471999}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8f90cb8f1048184cad2b8b217fcec1e, type: 3}
 --- !u!1 &2140894191
@@ -20307,6 +20327,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4838099274996296493, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
   m_PrefabInstance: {fileID: 2142471997}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2142471999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6856966122012821438, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+  m_PrefabInstance: {fileID: 2142471997}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939ee643082a3e448ae44dd636c3f83b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &126135300032571342
 PrefabInstance:
   m_ObjectHideFlags: 0

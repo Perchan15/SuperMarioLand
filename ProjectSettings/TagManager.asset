@@ -10,6 +10,7 @@ TagManager:
   - coin
   - Mushroom
   - PowerFlower
+  - Question
   layers:
   - Default
   - TransparentFX

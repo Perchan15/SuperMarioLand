@@ -79,6 +79,7 @@ public class HealthScript : MonoBehaviour
             currentHealth += 1;
             Destroy(collision.collider.gameObject);
             scoreScript.scoreValue += 1000;
+            scoreScript.score.text = scoreScript.scoreValue.ToString();
 
             if (currentHealth == maxHealth)
             {

@@ -28,7 +28,8 @@ public class HitStomp : MonoBehaviour
         {
             Destroy(other.gameObject);
             rb2D.velocity = new Vector2(rb2D.velocity.x, bounce);
-            scoreScript.scoreValue += 100;
+            scoreScript.scoreValue += 1000;
+            scoreScript.score.text = scoreScript.scoreValue.ToString();
         }
     }
 }

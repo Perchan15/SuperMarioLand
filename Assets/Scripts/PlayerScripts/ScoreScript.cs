@@ -13,6 +13,12 @@ public class ScoreScript : MonoBehaviour
         score.text = scoreValue.ToString();
     }
 
+    void Update()
+    {
+       
+        
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "coin")
@@ -20,5 +26,7 @@ public class ScoreScript : MonoBehaviour
             scoreValue += 100;
             score.text = scoreValue.ToString();
         }
+
+      
     }
 }
