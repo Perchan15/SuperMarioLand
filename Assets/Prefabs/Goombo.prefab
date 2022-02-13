@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 385290305674609650}
   - component: {fileID: 4371600736127779131}
   - component: {fileID: 190215139200462363}
+  - component: {fileID: 1526184994428602809}
   m_Layer: 7
   m_Name: Goombo
   m_TagString: Enemy
@@ -146,3 +147,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rb: {fileID: 385290305674609650}
+--- !u!95 &1526184994428602809
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736847274109534468}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e7335269f78a59c4f82889439dc9c60d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

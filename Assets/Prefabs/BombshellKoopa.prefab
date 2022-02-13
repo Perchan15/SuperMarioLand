@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5606068371852614310}
   - component: {fileID: -955749164462550225}
   - component: {fileID: -5035485325582989965}
+  - component: {fileID: 6777901082869176263}
   m_Layer: 0
   m_Name: BombshellKoopa
   m_TagString: Enemy
@@ -146,3 +147,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rb: {fileID: -955749164462550225}
+--- !u!95 &6777901082869176263
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503626884557450535}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f2de6f926447fbd4db8923f62181299a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
