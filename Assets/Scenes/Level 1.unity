@@ -1946,176 +1946,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &449883075
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4807351794003567873, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: audioSource
-      value: 
-      objectReference: {fileID: 449883077}
-    - target: {fileID: 4807351794003567873, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: emptyBlockSprite
-      value: 
-      objectReference: {fileID: -510826208307111945, guid: 5d943471198d923418cdd31469b75027, type: 3}
-    - target: {fileID: 7215968231900901587, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_Name
-      value: MushroomPowerUpBlock
-      objectReference: {fileID: 0}
-    - target: {fileID: 7215968231900901587, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.383
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8813517824615814837, guid: b601590366518154b99f8ecabae70180, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b601590366518154b99f8ecabae70180, type: 3}
---- !u!1 &449883076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7215968231900901587, guid: b601590366518154b99f8ecabae70180, type: 3}
-  m_PrefabInstance: {fileID: 449883075}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &449883077
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 449883076}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: af1410206918f324aaaf91ae23607796, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.27
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!4 &456837610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4903188932354839897, guid: 64f27206ab90de34a9e402c50e4b6272, type: 3}
@@ -10828,6 +10658,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70944478d1a650e47b9cb9d5c184dcbc, type: 3}
+--- !u!1001 &4187136414079402604
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.383
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4635424069474483994, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791417802468759932, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
+      propertyPath: m_Name
+      value: MushroomPowerUpBlock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf08d395007da424ab71805d2ad5cacb, type: 3}
 --- !u!1001 &4838099275171465927
 PrefabInstance:
   m_ObjectHideFlags: 0
