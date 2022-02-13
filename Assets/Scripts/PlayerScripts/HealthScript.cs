@@ -22,6 +22,8 @@ public class HealthScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource powerUpSound;
 
+
+
     //public Animator animator;
 
     // Start is called before the first frame update
@@ -120,5 +122,25 @@ public class HealthScript : MonoBehaviour
         }
 
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "FireBall")
+        {
+            if (currentHealth == 2)
+            {
+                transform.localScale /= 1.2f;
+            }
+            audioSource.Play();
+            Destroy(other.gameObject);
+            currentHealth -= 1;
+          
+        }
+
+
+    }
+
+
+
 
 }

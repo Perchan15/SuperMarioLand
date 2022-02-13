@@ -13,6 +13,7 @@ TagManager:
   - Question
   - spinx
   - Bullet
+  - FireBall
   layers:
   - Default
   - TransparentFX
