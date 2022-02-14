@@ -22,6 +22,8 @@ public class HealthScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource powerUpSound;
 
+    public float bounce;
+    public Rigidbody2D rb2D;
 
 
     //public Animator animator;
@@ -67,12 +69,15 @@ public class HealthScript : MonoBehaviour
             }
             currentHealth -= 1;
             audioSource.Play();
+
             if (isInvincible)
                 return;
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-            
+
+            rb2D.velocity = new Vector2(rb2D.velocity.x, bounce);
+
         }
 
         if (collision.collider.tag == "Mushroom")

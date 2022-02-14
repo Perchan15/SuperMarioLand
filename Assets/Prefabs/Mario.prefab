@@ -451,6 +451,8 @@ MonoBehaviour:
   scoreScript: {fileID: 6856966122012821438}
   audioSource: {fileID: 4585632939943008496}
   powerUpSound: {fileID: 4549770074362916320}
+  bounce: 0
+  rb2D: {fileID: 4838099274996296491}
 --- !u!114 &8523592005884818174
 MonoBehaviour:
   m_ObjectHideFlags: 0

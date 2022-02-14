@@ -19454,6 +19454,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.00033569336
       objectReference: {fileID: 0}
+    - target: {fileID: 4838099274996296490, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4838099274996296491, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: m_Mass
       value: 1

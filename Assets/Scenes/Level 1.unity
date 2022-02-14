@@ -10871,6 +10871,10 @@ PrefabInstance:
       value: -0.704
       objectReference: {fileID: 0}
     - target: {fileID: 9069138735879421905, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
+      propertyPath: bounce
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9069138735879421905, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 1945820055}

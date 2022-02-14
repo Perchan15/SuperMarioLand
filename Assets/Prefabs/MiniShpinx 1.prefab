@@ -127,11 +127,12 @@ MonoBehaviour:
   Target: {fileID: 4838099274996296493, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
   Gun: {fileID: 8076208938487522891}
   bullet: {fileID: 5026814583501660424, guid: ae28d639d3a503c48ab9d1a9829e32da, type: 3}
-  FireRate: 1
+  FireRate: 0.5
   Shootpoint: {fileID: 8076208937762891548}
   Force: 10
   MouthClosed: {fileID: 0}
   MouthOpen: {fileID: 0}
+  Health: 3
 --- !u!1 &8076208937762891549
 GameObject:
   m_ObjectHideFlags: 0
