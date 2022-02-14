@@ -125,7 +125,6 @@ MonoBehaviour:
   coinCounter: {fileID: 8523592005884818174, guid: 4551d1f7456b4c448a8958458eae14d1, type: 3}
   Timer: 1.5
   sphinx: {fileID: 6977249127568232050, guid: f0d59800513b67b42be43360ce58fb89, type: 3}
-  audioSource: {fileID: 0}
 --- !u!58 &-1576724695809861083
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -22,10 +22,6 @@ public class HealthScript : MonoBehaviour
     public AudioSource audioSource;
     public AudioSource powerUpSound;
 
-    public float bounce;
-    public Rigidbody2D rb2D;
-
-
     //public Animator animator;
 
     // Start is called before the first frame update
@@ -75,9 +71,6 @@ public class HealthScript : MonoBehaviour
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
-
-            rb2D.velocity = new Vector2(rb2D.velocity.x, bounce);
-
         }
 
         if (collision.collider.tag == "Mushroom")
@@ -107,6 +100,7 @@ public class HealthScript : MonoBehaviour
             if (currentHealth == 1)
             {
                 currentHealth += 1;
+                transform.localScale *= 1.2f;
             }
         }
 
